@@ -8,7 +8,8 @@ import Dashboard from './Dashboard';
 
 function App() {
   return (
-    <Router>
+     <Router basename="/creator">
+  
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
