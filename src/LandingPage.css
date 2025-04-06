@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: left;
+    padding: 0rem;
+    background-color: white;
+}
+.heroi-image {
+    margin-right: 0rem; /* Adds space between heroi-image and nav links */
+    margin-left: 0;
+    float: left;
+    gap: 2rem;/* Ensures no left margin */
+}
+
+.heroi-image img {
+    width: 67px;
+    height: 58px;
+    opacity: 1;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+.navs {
+display: flex;
+gap: 1rem;
+margin-left: auto; /* Pushes .navs to the extreme right */
+}
+
+.navs button {
+padding: 0.5rem 1rem;
+background-color: #007bff;
+border: none;
+color: white;
+cursor: pointer;
+transition: background-color 0.3s;
+border-radius: 4px;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem; /* Adds space between each nav link */
+    margin-left: auto; /* Pushes nav links to the right */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero-section {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 10rem;
+    text-align: right;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+.hero-text h1,
+.hero-text h2 {
+    margin: 0.5rem 0;
+}
+
+.hero-text p {
+    margin: 0.5rem 0;
+}
+
+.hero-buttons button {
+    margin: 1rem 0.5rem 0 0;
+} 

@@ -1,0 +1,395 @@
+/* General Dashboard Layout */
+html, body {
+    height: 100%; /* Ensures full height for scrolling */
+    margin: 0; /* Remove default margin */
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;  /* Updated Font */
+    background-color: #f8f9fa; /* Optional: Set a background color for the entire dashboard */
+}
+
+
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+/* General Dashboard Layout */
+html, body {
+    height: 100%;
+    margin: 0; /* Remove margin from body */
+    padding: 0; /* Remove padding from body */
+}
+
+/* Navbar */
+.dashboard-navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0; /* Remove any potential margin */
+    box-sizing: border-box; /* Ensures padding doesn't add extra space */
+}
+
+.navbar-logo .logo-icon {   /* Add an icon to the logo */
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+
+/* Styling for Nav Links Container in Main Content */
+.nav-links-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+
+.dashboard-navbar .navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.additional-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 11px; /* Adjust spacing between fields as necessary */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;  /* Align QR Codes and Cards to the left */
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+/* Navbar Styles */
+/* Navbar */
+.dashboard-navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center;
+    padding: 0; /* Reduced padding for better alignment */
+}
+
+/* Navbar Logo */
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Links */
+.dashboard-navbar .nav-links {
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    flex: 1; /* Allow the links to take available space */
+}
+
+.nav-links {
+    display: flex; /* Use flexbox for nav links */
+    list-style: none; /* Remove bullet points */
+    margin-left: 0; /* No left margin */
+    padding: 0; /* Remove padding */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Space between links */
+}
+
+/* Navbar Icon Container */
+.dashboard-navbar .navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Align Navbar Links */
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+/* Hover Effects */
+.nav-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Icon for Nav Links */
+.nav-links a .nav-icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Body */
+.dashboard-body {
+    display: flex;
+    flex: 1; 
+    margin: 0; /* Allow the body to grow and fill the available space */
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+    width: 250px;
+    background-color: rgba(248, 249, 250, 0.8); /* Faded Background */
+    padding: 20px;
+    border-right: 2px solid #ddd;
+    font-family: 'Roboto', sans-serif;  /* Updated to Roboto font */
+}
+
+/* User Profile on Sidebar */
+.user-profile-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-icon-sidebar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #d1d1d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px; /* Icon size */
+}
+
+.profile-name-sidebar {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Ensure all form fields are displayed in a single column */
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Space between each field */
+}
+
+/* Style for the change text */
+.change-text {
+    color: purple; /* Change text color to purple */
+    cursor: pointer; /* Makes it look clickable */
+    margin-top: 5px; /* Adds some space above each text */
+    text-align: right; /* Aligns the text to the right */
+}
+
+/* Additional styles to keep buttons aligned properly */
+.email-field, .password-field, .phone-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns text to the right */
+}
+
+/* Sidebar Links */
+.dashboard-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.dashboard-sidebar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(51, 51, 51, 0.8);  /* Faded text */
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.dashboard-sidebar ul li a .sidebar-icon {  /* Icon for sidebar links */
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.dashboard-sidebar ul li a:hover {
+    color: #007bff;
+}
+
+/* Upgrade Now Button in Sidebar */
+.upgrade-button {
+    background-color: #ffeb3b; /* Bright yellow background */
+    color: #000; /* Black text color for better readability */
+    border: none; /* Remove default border */
+    padding: 0.5rem 1rem; /* Add padding */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    text-align: center; /* Center the text */
+    display: inline-block; /* Make it behave like a button */
+    text-decoration: none; /* Remove underline for links */
+}
+
+.upgrade-button:hover {
+    background-color: #fdd835; /* Darker yellow on hover */
+}
+
+/* Optional: To ensure the button has no interference from external styles */
+.upgrade-button:focus {
+    outline: none; /* Remove focus outline */
+}
+
+.upgrade-now-button .upgrade-icon {  /* Icon for Upgrade Now button */
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.upgrade-now-button:hover {
+    background-color: #ffeb3b; /* Lighter yellow on hover */
+    color: #333;
+}
+
+/* Main Section */
+.dashboard-main {
+    flex: 1;
+    padding: 5px;
+    background-color: #fff;
+
+    border-radius: 5px; /* Slight border radius for smoother edges */
+
+    margin: 5px auto; /* Center the main content */
+}/* Dropdown Menu Styles */
+/* Dropdown Menu Styles */
+/* Sidebar Styles */
+.dashboard-sidebar {
+    background-color: transparent; /* No background color for the sidebar */
+    padding: 20px; /* Add some padding to the sidebar */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    padding: 10px; /* Add some padding */
+    margin-left: 10px; /* Indent dropdown items */
+    background-color: transparent; /* Background for dropdown */
+    /* Border for visibility */
+     /* Shadow for depth */
+    position: relative; /* Positioning context for dropdown */
+    list-style: none; /* Remove bullet points */
+}
+
+/* Style for dropdown headings */
+.dropdown-toggle {
+    cursor: pointer; /* Change cursor to pointer for dropdown headings */
+}
+
+/* Navbar Styles */
+.nav-links {
+    margin-left: 0; /* Align navbar links to the left */
+}
+
+/* Style links inside the dropdown */
+.dropdown-menu li {
+    margin-bottom: 10px; /* Spacing between items */
+}
+
+.dropdown-menu a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.dropdown-menu a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+
+/* Style links inside the dropdown */
+
+
+
+
+
+.dashboard-main h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Account Settings Form */
+.account-settings-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Two columns for the form */
+    gap: 20px;
+}
+
+.account-settings-form .MuiTextField-root {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.account-settings-form label {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .dashboard-sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .dashboard-main {
+        width: 100%;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .navbar-logo {
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+}
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Logo and Nav Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            
+            align-items: center;
+            padding: 1rem;
+            background-color: white;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: left;
+        }
+
+        .heroi-image img {
+            width: 67px;
+            height: 58px;
+            margin-right: 20rem;
+            margin-left: 0;
+            left: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: space-between;
+            float: right;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+
+.navs button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+    <form className="account-settings-form">
+        <TextField label="First Name" defaultValue="Saket" variant="outlined" fullWidth />
+        <TextField label="Last Name" defaultValue="Sinha" variant="outlined" fullWidth />
+        <TextField label="Role" defaultValue="Admin" variant="outlined" fullWidth />
+        <TextField label="Timezone" defaultValue="IST (India Standard Time)" variant="outlined" fullWidth />
+        <TextField label="Phone Number" defaultValue="+91-7080125777" variant="outlined" fullWidth />
+        <TextField label="Email" defaultValue="sinhasaket13@gmail.com" variant="outlined" fullWidth />
+        <TextField label="Date Joined" defaultValue="August 2021" variant="outlined" fullWidth />
+        <TextField label="Password" defaultValue="**********" type="password" variant="outlined" fullWidth />
+        
+           
+    </form>
+    
+</head>
+<body>
+
+
+    <!-- React Root Element -->
+    <div id="root"></div>
+
+    <!-- Add your bundle.js or use the development server -->
+    <script src="path_to_your_bundle.js"></script>
+  
+</div>
+</body>
+</html>
